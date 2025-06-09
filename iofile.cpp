@@ -20,8 +20,11 @@ int main()
         // mendapatkan setiap karakter dalam satu baris
         getline(cin, baris);
         // loop akan berhenti jika pengguna mengetik 'q'
-        if (baris == "q") {
+        if (baris == "q") 
             break;
-        }
+        // menulis dan memasukkan nilai dari baris ke file
+        outfile << baris << endl;    
     }
+    outfile.close(); // menutup file
+    cout << "File telah ditulis." << endl;
 }
