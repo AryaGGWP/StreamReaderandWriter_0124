@@ -10,5 +10,13 @@ int main() {
    try {
         array<int, 3> data = {10, 20, 30};
         // pesan array interger 3 elemen
+        cout << data.at(4) << endl;
+        // memanggil array elemen ke-4
    }
+   catch (exception &e) {
+        // penangkap menggunakan obyek exception
+        cout << e.what() << endl;
+        /*akan dieksekusi karna array data hanya
+        memiliki 3 elemen*/
+   } 
 }
