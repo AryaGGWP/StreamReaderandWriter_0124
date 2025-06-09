@@ -26,5 +26,7 @@ int main()
         outfile << baris << endl;    
     }
     outfile.close(); // menutup file
-    cout << "File telah ditulis." << endl;
+    
+    // membuat obyek input file stream dalam mode membaca
+    ifstream infile;
 }
